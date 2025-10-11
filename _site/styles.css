@@ -1,0 +1,474 @@
+/* Configuración general */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --text-color: #333;
+  --light-gray: #f8f9fa;
+  --border-color: #e1e4e8;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  line-height: 1.7;
+}
+
+.hero-banner {
+  background-image: url('images/banner.jpg');
+  background-color: red;  /* AGREGA ESTA LÍNEA TEMPORALMENTE */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 120px 20px;
+  margin: -20px -20px 40px -20px;
+  text-align: center;
+  position: relative;
+}
+
+/* Sección de imágenes de trabajo */
+.work-images {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.field-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.field-image:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.image-container em {
+  display: block;
+  font-style: italic;
+  color: #666;
+  font-size: 0.95em;
+  margin-top: 15px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .work-images {
+    grid-template-columns: 1fr;
+  }
+  
+  .field-image {
+    height: 250px;
+  }
+}
+
+.hero-banner h1 {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 3em;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Contenedor principal con dos columnas */
+.main-content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
+}
+
+/* Sidebar con perfil */
+.sidebar-profile {
+  text-align: center;
+}
+
+/* Foto de perfil - MÁS GRANDE */
+.profile-photo {
+  width: 200px !important;
+  height: 200px !important;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--border-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Nombre del perfil */
+.profile-name {
+  font-size: 1.3em;
+  color: var(--primary-color);
+  margin: 20px 0 10px 0;
+  font-weight: 600;
+}
+
+/* Subtítulo del perfil */
+.profile-subtitle {
+  font-size: 0.95em;
+  color: #666;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+/* Enlaces del perfil */
+.profile-links {
+  text-align: left;
+  padding: 0 20px;
+}
+
+.profile-links p {
+  margin: 12px 0;
+  font-size: 0.95em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-links i {
+  width: 20px;
+  color: var(--secondary-color);
+  font-size: 1.1em;
+}
+
+.profile-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.profile-links a:hover {
+  color: var(--secondary-color);
+}
+
+/* Texto principal */
+.main-text {
+  padding-top: 20px;
+}
+
+.main-text p {
+  font-size: 1.05em;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Sección de imágenes */
+.image-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.field-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.image-section em {
+  display: block;
+  font-style: italic;
+  color: #666;
+  font-size: 0.95em;
+  margin-top: 10px;
+}
+
+/* Navbar personalizado */
+.navbar {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-banner {
+    padding: 80px 20px;
+  }
+  
+  .hero-banner h1 {
+    font-size: 2em;
+  }
+  
+  .main-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .profile-photo {
+    width: 160px !important;
+    height: 160px !important;
+  }
+  
+  .profile-name {
+    font-size: 1.1em;
+  }
+  
+  .profile-links {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-banner {
+    padding: 60px 15px;
+  }
+  
+  .hero-banner h1 {
+    font-size: 1.6em;
+  }
+  
+  .profile-photo {
+    width: 140px !important;
+    height: 140px !important;
+  }
+}
+
+/* Estilos para otras páginas */
+.page-content {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Mejoras para listas */
+article ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+article li {
+  padding: 8px 0;
+  padding-left: 25px;
+  position: relative;
+}
+
+article li:before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+/* Mejoras para el texto principal */
+.main-text h3 {
+  color: var(--primary-color);
+  font-size: 1.1em;
+  margin-top: 25px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 5px;
+}
+
+.main-text p strong {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.main-text hr {
+  border: none;
+  border-top: 1px solid #e1e4e8;
+  margin: 20px 0;
+}
+
+.main-text p {
+  font-size: 0.95em;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* Sección de áreas de trabajo */
+h2 {
+  color: var(--primary-color);
+  font-size: 1.8em;
+  margin: 50px 0 30px 0;
+  text-align: center;
+  border-bottom: 3px solid var(--secondary-color);
+  padding-bottom: 10px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Agregar al final de tu styles.css */
+
+/* Contenedor de estadísticas */
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.stat-box {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+}
+
+.stat-box strong {
+  display: block;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+/* Estilos para las tesis */
+article h2 {
+  color: #2c3e50;
+  font-size: 2em;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 15px;
+}
+
+article h3 {
+  color: #3498db;
+  font-size: 1.5em;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  border-left: 4px solid #3498db;
+}
+
+article p strong {
+  color: #2c3e50;
+  font-size: 1.05em;
+  display: block;
+  margin-bottom: 5px;
+}
+
+article p em {
+  color: #666;
+  font-style: italic;
+  display: block;
+  margin-bottom: 10px;
+}
+
+article p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  padding-left: 20px;
+}
+
+/* Grid de temas */
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin: 40px 0;
+}
+
+.topic-card {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 10px;
+  border-left: 4px solid #3498db;
+  transition: all 0.3s ease;
+}
+
+.topic-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-left-color: #667eea;
+}
+
+.topic-card h3 {
+  color: #2c3e50;
+  font-size: 1.2em;
+  margin: 0 0 10px 0;
+  padding: 0;
+  border: none;
+}
+
+.topic-card p {
+  color: #666;
+  font-size: 0.9em;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .topics-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  article h2 {
+    font-size: 1.6em;
+  }
+  
+  article h3 {
+    font-size: 1.3em;
+  }
+}
+
+/* Estilos para página de CV */
+.cv-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.download-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white !important;
+  padding: 15px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.download-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  color: white !important;
+}
+
+.cv-container iframe {
+  margin-top: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,32 @@
+{
+  "index.qmd": {
+    "index.html": "617035d9"
+  },
+  "about.qmd": {
+    "about.html": "cf3c1e94"
+  },
+  "posts/post-with-code/index.qmd": {
+    "index.html": "7eb93198"
+  },
+  "posts/welcome/index.qmd": {
+    "index.html": "dce651ac"
+  },
+  "Curriculum_Vitae_(CV).qmd": {
+    "Curriculum_Vitae_(CV).html": "223ca52b"
+  },
+  "index_old.qmd": {
+    "index_old.html": "19445a68"
+  },
+  "Libros.qmd": {
+    "Libros.html": "2ace4c26"
+  },
+  "Proyectos.qmd": {
+    "Proyectos.html": "3b8578ce"
+  },
+  "Publicaciones.qmd": {
+    "Publicaciones.html": "8b8523c6"
+  },
+  "Tesis.qmd": {
+    "Tesis.html": "1f5043e7"
+  }
+}

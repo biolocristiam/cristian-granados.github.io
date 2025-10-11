@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: docs 
+
+website:
+  title: "Cristian Granados-Martínez"
+  navbar:
+    left: 
+      - text: "Proyectos"
+        file: index.qmd
+      - text: "Publicaciones"
+        file: Publicaciones.qmd
+      - text: "Libros"
+        file: Libros.qmd
+      - text: "Tesis"
+        file: Tesis.qmd
+      - text: "Curriculum Vitae (CV)"
+        file: Curriculum_Vitae_(CV).qmd
+    right:
+      - text: "About"
+        file: about.qmd
+      - icon: github
+        href: https://github.com/tu-usuario
+        aria-label: GitHub
+      - icon: twitter
+        href: https://twitter.com/tu-usuario
+        aria-label: Twitter
+
+format:
+  html:
+    theme:
+      - cosmo
+    css: styles.css
+    toc: false
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+editor: visual
