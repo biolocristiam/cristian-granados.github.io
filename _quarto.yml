@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Cristian Granados-Martínez"
+  google-analytics: "G-6BF2W1LY77"  # ← AGREGAR AQUÍ (reemplaza con tu ID real)
   navbar:
     left: 
       - text: "Proyectos"

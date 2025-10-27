@@ -89,3 +89,20 @@ A continuación puedes ver algunas imágenes de los lugares donde he desarrollad
 ## \## Cursos de Maestría
 ::::::
 ::::::::::
+---
+
+::: {style="text-align: center; margin-top: 3em; padding: 2em; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);"}
+
+<div style="color: white; margin-bottom: 1em;">
+  <h3 style="margin: 0; font-weight: 300; font-size: 1.1em;">Visitas al sitio</h3>
+</div>
+
+<div style="background: rgba(255,255,255,0.2); padding: 1em; border-radius: 10px; display: inline-block;">
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=biolocristiam.cristian-granados&left_color=667eea&right_color=764ba2&left_text=Visitantes" alt="Contador de visitas" style="display: inline-block;"/>
+</div>
+
+<div style="margin-top: 1em; color: rgba(255,255,255,0.8); font-size: 0.9em;">
+  Gracias por visitar mi sitio web 🌟
+</div>
+
+:::
