@@ -1,13 +1,6 @@
 ---
 title: ""
 page-layout: full
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: false
-  sort-ui: false
-  filter-ui: false
 ---
 
 ::: {.hero-banner style="background-image: url('images/banner.jpg'); background-size: cover; background-position: center;"}
@@ -86,3 +79,10 @@ A continuación puedes ver algunas imágenes de los lugares donde he desarrollad
 
 ::::::
 ::::::::::
+
+## 📹 Videos Académicos
+
+<div style="margin: 2em 0;">
+  <h3>Macroinvertebrados en el río Jerez</h3>
+  <div class="ratio ratio-16x9" style="margin: 1em 0;">
+    <iframe src="https://www.youtube.com/embed/k9yleYEvyYM" title="Macroinvertebrados" frameborder="0" allow="accelerometer; autoplay; clipboard-

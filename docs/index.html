@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -69,35 +67,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-6BF2W1LY77"></script>
 
 <script type="text/javascript">
@@ -109,35 +78,6 @@ gtag('config', 'G-6BF2W1LY77', { 'anonymize_ip': true});
 </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -272,93 +212,21 @@ window.Quarto = {
 </section>
 </div>
 </div>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="dmlkZW9zJTJDdHJhYmFqbyUyMGRlJTIwY2FtcG8=" data-listing-date-sort="1763960400000" data-listing-file-modified-sort="1764028556146" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="17">
-<div class="thumbnail"><a href="./posts/video-instagram-campo/index.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/video-instagram-campo/index.html" class="no-external">Trabajo de campo en ecosistemas acuáticos</a>
+<section id="videos-académicos" class="level2">
+<h2 class="anchored" data-anchor-id="videos-académicos">📹 Videos Académicos</h2>
+<div style="margin: 2em 0;">
+<h3 class="anchored">
+Macroinvertebrados en el río Jerez
 </h3>
-<div class="delink listing-description"><a href="./posts/video-instagram-campo/index.html" class="no-external">
-🎬 Ver reel en Instagram →
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/video-instagram-campo/index.html" class="no-external">
-<div class="listing-date">
-Nov 24, 2025
-</div>
-<div class="listing-author">
-Cristian Granados
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="dmlkZW9zJTJDZWNvbG9nJUMzJUFEYSUyMGFjdSVDMyVBMXRpY2E=" data-listing-date-sort="1763960400000" data-listing-file-modified-sort="1764028555744" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
-<div class="thumbnail"><a href="./posts/video-macroinvertebrados/index.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/video-macroinvertebrados/index.html" class="no-external">Macroinvertebrados en el río Jerez</a>
-</h3>
-<div class="delink listing-description"><a href="./posts/video-macroinvertebrados/index.html" class="no-external">
+<div class="ratio ratio-16x9" style="margin: 1em 0;">
+<pre><code>&lt;iframe src="https://www.youtube.com/embed/k9yleYEvyYM" title="Macroinvertebrados" frameborder="0" allow="accelerometer; autoplay; clipboard-</code></pre>
 
 
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/k9yleYEvyYM" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</div>
+</div>
+</section>
 
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/video-macroinvertebrados/index.html" class="no-external">
-<div class="listing-date">
-Nov 24, 2025
-</div>
-<div class="listing-author">
-Cristian Granados
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="dmlkZW9zJTJDbWV0b2RvcyUyMGRlJTIwY2FtcG8=" data-listing-date-sort="1763960400000" data-listing-file-modified-sort="1764028701768" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="15">
-<div class="thumbnail"><a href="./posts/video-tecnicas-campo/index.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/video-tecnicas-campo/index.html" class="no-external">Tecnicas de campo en ecologia acuatica</a>
-</h3>
-<div class="delink listing-description"><a href="./posts/video-tecnicas-campo/index.html" class="no-external">
-Metodologias y tecnicas para el estudio de ecosistemas acuaticos en rios tropicales.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/video-tecnicas-campo/index.html" class="no-external">
-<div class="listing-date">
-Nov 24, 2025
-</div>
-<div class="listing-author">
-Cristian Granados
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <div style="text-align: center; margin-top: 3em; padding: 2em; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
 
   <div style="color: white; margin-bottom: 1em;">
