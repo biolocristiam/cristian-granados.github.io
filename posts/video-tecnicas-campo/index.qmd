@@ -1,0 +1,12 @@
+---
+title: "Tecnicas de campo en ecologia acuatica"
+author: "Cristian Granados"
+date: "2025-11-24"
+categories: [videos, metodos de campo]
+---
+
+## Metodologias para el estudio de ecosistemas loticos
+
+{{< video https://www.youtube.com/watch?v=Qd_jwgu9AEM >}}
+
+Metodologias y tecnicas para el estudio de ecosistemas acuaticos en rios tropicales.

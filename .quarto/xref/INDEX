@@ -1,32 +1,35 @@
 {
-  "index.qmd": {
-    "index.html": "617035d9"
-  },
   "about.qmd": {
-    "about.html": "cf3c1e94"
-  },
-  "posts/post-with-code/index.qmd": {
-    "index.html": "7eb93198"
-  },
-  "posts/welcome/index.qmd": {
-    "index.html": "dce651ac"
+    "about.html": "f6394e5a"
   },
   "Curriculum_Vitae_(CV).qmd": {
-    "Curriculum_Vitae_(CV).html": "223ca52b"
+    "Curriculum_Vitae_(CV).html": "b3723e8f"
+  },
+  "index.qmd": {
+    "index.html": "6e27ca13"
   },
   "index_old.qmd": {
-    "index_old.html": "19445a68"
+    "index_old.html": "2d9dc515"
   },
   "Libros.qmd": {
-    "Libros.html": "2ace4c26"
+    "Libros.html": "62d5175c"
   },
   "Proyectos.qmd": {
-    "Proyectos.html": "3b8578ce"
+    "Proyectos.html": "8a5326d9"
   },
   "Publicaciones.qmd": {
-    "Publicaciones.html": "8b8523c6"
+    "Publicaciones.html": "e14fce44"
   },
   "Tesis.qmd": {
-    "Tesis.html": "1f5043e7"
+    "Tesis.html": "38523684"
+  },
+  "posts/video-instagram-campo/index.qmd": {
+    "index.html": "110ca56e"
+  },
+  "posts/video-macroinvertebrados/index.qmd": {
+    "index.html": "36d77f25"
+  },
+  "posts/video-tecnicas-campo/index.qmd": {
+    "index.html": "4b1601e6"
   }
 }

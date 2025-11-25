@@ -2,22 +2,25 @@
   {
     "listing": "/Proyectos.html",
     "items": [
-      "/posts/post-with-code/index.html",
-      "/posts/welcome/index.html"
-    ]
-  },
-  {
-    "listing": "/index_old.html",
-    "items": [
-      "/posts/post-with-code/index.html",
-      "/posts/welcome/index.html"
+      "/posts/video-instagram-campo/index.html",
+      "/posts/video-macroinvertebrados/index.html",
+      "/posts/video-tecnicas-campo/index.html"
     ]
   },
   {
     "listing": "/index.html",
     "items": [
-      "/posts/post-with-code/index.html",
-      "/posts/welcome/index.html"
+      "/posts/video-instagram-campo/index.html",
+      "/posts/video-macroinvertebrados/index.html",
+      "/posts/video-tecnicas-campo/index.html"
+    ]
+  },
+  {
+    "listing": "/index_old.html",
+    "items": [
+      "/posts/video-instagram-campo/index.html",
+      "/posts/video-macroinvertebrados/index.html",
+      "/posts/video-tecnicas-campo/index.html"
     ]
   }
 ]

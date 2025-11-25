@@ -1,0 +1,12 @@
+---
+title: "Macroinvertebrados en el río Jerez"
+author: "Cristian Granados"
+date: "2025-11-24"
+categories: [videos, ecología acuática]
+---
+
+## Muestreo y caracterización de macroinvertebrados acuáticos
+
+{{< video https://www.youtube.com/watch?v=k9yleYEvyYM >}}
+
+## En este video exploramos los métodos de muestreo de macroinvertebrados acuáticos en el río Jerez, Colombia.
