@@ -177,11 +177,11 @@ El profesor Cristian Enrique Granados Martínez descubrió dos nuevas especies d
 
 **Especies descubiertas:**
 
-1.  **Campsurus vichada**
+1.  *Campsurus vichada*
     -   Descubierta en el río Tomo, departamento del Vichada
     -   Expedición realizada a través del programa Colombia BIO
     -   Territorio anteriormente afectado por conflicto armado
-2.  **Campsurus cristales**
+2.  *Campsurus cristales*
     -   Descubierta en Caño Cristales, departamento del Meta
     -   "El río de los cinco colores" en el Área de Manejo Especial La Macarena
     -   Expedición organizada por Instituto Humboldt, Colciencias y varias universidades
@@ -216,11 +216,7 @@ Investigación dirigida por el docente Javier Rodríguez (Director del Grupo de 
 
 **Hallazgo importante:**
 
-Investigación que arrojó el descubrimiento de una especie perteneciente al género **Cabecar**, potencialmente nueva para la ciencia.
-
-**Declaraciones del investigador Cristian Granados:**
-
-"A raíz del convenio hemos realizado investigaciones importantes, el último informe que presentamos concluyó que estamos ante la posibilidad de haber hallado una nueva especie en el Parque Tayrona. Si logramos confirmarlo, sería el reporte del primer adulto y de la primera especie del Caribe Colombiano, el país y el neotrópico."
+Investigación que arrojó el descubrimiento de una especie perteneciente al género **Cabecar**..
 
 **Contexto:**
 
@@ -253,15 +249,19 @@ El profesor Granados Martínez ha participado en **cinco libros** de la serie so
 ## 🎓 Reconocimientos Académicos y Logros
 
 -   **Investigador Asociado** - Minciencias
--   **Miembro del grupo de investigación** Ecología y Biodiversidad de Ecosistemas Tropicales (EBET)
+
+-   **Miembro de los grupos de investigaciónes** Ecología y Biodiversidad de Ecosistemas Tropicales (EBET) y Biotecnología
+
 -   **Distinción Gaviota Dorada** - Universidad del Magdalena (2017)
+
 -   **28 publicaciones científicas** con más de 93 citaciones
+
 -   **4 nuevas especies descubiertas** para la ciencia:
+
     -   *Zunielmis pax* (2022) - Nuevo género y especie
     -   *Tricorythodes macuira* (2017)
     -   *Campsurus vichada* (2016)
     -   *Campsurus cristales* (2016)
--   **Posible quinta especie** (género Cabecar) en proceso de confirmación
 
 ------------------------------------------------------------------------
 
