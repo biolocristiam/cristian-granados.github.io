@@ -140,6 +140,62 @@
     "text": "About this blog"
   },
   {
+    "objectID": "courses.html",
+    "href": "courses.html",
+    "title": "Cursos y Materiales Educativos",
+    "section": "",
+    "text": "En esta sección encontrarás materiales educativos, tutoriales y cursos relacionados con ecología acuática, análisis estadístico en R, y biodiversidad."
+  },
+  {
+    "objectID": "courses.html#recursos-para-el-aprendizaje-en-ecología-acuática",
+    "href": "courses.html#recursos-para-el-aprendizaje-en-ecología-acuática",
+    "title": "Cursos y Materiales Educativos",
+    "section": "",
+    "text": "En esta sección encontrarás materiales educativos, tutoriales y cursos relacionados con ecología acuática, análisis estadístico en R, y biodiversidad."
+  },
+  {
+    "objectID": "courses.html#tutoriales-en-r---rpubs",
+    "href": "courses.html#tutoriales-en-r---rpubs",
+    "title": "Cursos y Materiales Educativos",
+    "section": "📊 Tutoriales en R - RPubs",
+    "text": "📊 Tutoriales en R - RPubs\n\nColección Completa de Tutoriales\nAccede a mi colección de tutoriales prácticos desarrollados en R, diseñados para estudiantes e investigadores en ecología y ciencias ambientales.\n\n📖 Tutoriales Publicados Recientemente:\nTutorial Principal: - Análisis de Diversidad Alfa y Beta en el contexto del cambio climático - Guía completa con 16 módulos - Desde instalación de R hasta análisis avanzados - Incluye ejercicios prácticos y recursos adicionales\nOtros Tutoriales Disponibles: - Diversidad Beta Clase 1 - Fundamentos y métodos - Protocolo preparación de reactivos PPF - Limnología práctica - Guía de Análisis de Diversidad - Metodología tradicional - Curvas de rango–abundancia de Whittaker - Visualización de diversidad - Gráficos especializados - Análisis de diversidad alfa - Análisis con Vegan - Uso del paquete vegan para cálculos ecológicos\n\n\n🎯 Contenido de los Tutoriales:\nLos tutoriales cubren: - Instalación y configuración de R y RStudio - Conceptos básicos de programación en R - Estructuras de datos y manipulación - Estadística descriptiva y visualización - Funciones especializadas para diversidad alfa y beta - Importación/exportación de datos ecológicos - Buenas prácticas en análisis reproducible\nNivel: Básico a Avanzado\nSoftware: R y RStudio (gratuito y libre)\nIdioma: Español\n→ Explorar todos los tutoriales en RPubs"
+  },
+  {
+    "objectID": "courses.html#curso-medición-de-la-diversidad-alfa-y-beta",
+    "href": "courses.html#curso-medición-de-la-diversidad-alfa-y-beta",
+    "title": "Cursos y Materiales Educativos",
+    "section": "🌍 Curso: Medición de la Diversidad Alfa y Beta",
+    "text": "🌍 Curso: Medición de la Diversidad Alfa y Beta\n\nEn el Contexto del Cambio Climático\nPrograma: Maestría en Gestión Integral Frente al Cambio Climático\nUniversidad de La Guajira\n\n📋 Información del Curso:\n\nIntensidad horaria: 36 horas\nFechas: 12-13, 19-20, 26-27 de septiembre de 2025\nFecha límite de inscripción: 11 de septiembre de 2025\nInicio: 12 de septiembre de 2025\nModalidad: Presencial\nUbicación: Riohacha, La Guajira, Colombia\nDocente: Cristian Enrique Granados Martínez (PhD(c))\n\nBiólogo, Magíster en Ciencias Biológicas\nGrupo de Investigación Biotecnología\n\n\n\n\n📖 Descripción del Curso:\nEl curso libre “Medición de la diversidad Alfa y Beta en el contexto del cambio climático” ofrece una aproximación teórico-práctica al análisis de la biodiversidad desde una perspectiva ecológica, cuantitativa y aplicada.\nA través del estudio de indicadores como la diversidad alfa (intra-hábitat) y beta (entre hábitats), se explora cómo los cambios ambientales, particularmente los asociados al cambio climático, influyen en la composición y distribución de especies.\nEste módulo brinda herramientas clave para la evaluación de impactos ambientales, el monitoreo ecológico y la toma de decisiones en materia de conservación y sostenibilidad.\n\n\n🎯 ¿Qué aprenderás?\n\nFundamentos conceptuales de la diversidad alfa y beta\nMétodos de cálculo e interpretación de índices de diversidad\nAnálisis de datos ecológicos con enfoque en variabilidad espacial\nAplicaciones prácticas en escenarios afectados por el cambio climático\nUso de software estadístico (R) para análisis de biodiversidad\nInterpretación ecológica de resultados cuantitativos\n\n\n\n🔬 Metodología:\n\nSesiones teóricas con ejemplos aplicados\nAnálisis de casos reales de ecosistemas afectados\nTrabajo con bases de datos ecológicas\nEjercicios prácticos de cálculo de diversidad\nDiscusiones críticas sobre efectos del cambio climático en ecosistemas\nUso de R para análisis estadístico\n\n\n\n👥 Dirigido a:\n\nEstudiantes de posgrado en áreas ambientales\nInvestigadores en ecología y biodiversidad\nProfesionales del área ambiental\nConsultores ambientales\nToda persona interesada en el análisis de la biodiversidad y sus transformaciones frente al cambio climático\n\n→ Más información sobre el curso"
+  },
+  {
+    "objectID": "courses.html#recursos-complementarios",
+    "href": "courses.html#recursos-complementarios",
+    "title": "Cursos y Materiales Educativos",
+    "section": "📖 Recursos Complementarios",
+    "text": "📖 Recursos Complementarios\n\nMateriales de Apoyo\nLos estudiantes del curso y usuarios de los tutoriales tienen acceso a:\n\nScripts de R para todos los análisis presentados\nConjuntos de datos de ejemplo de ecosistemas reales\nDocumentación de paquetes especializados\nBibliografía recomendada actualizada\nProtocolos de muestreo de biodiversidad\n\n\n\nHerramientas Recomendadas\n\nR y RStudio - Software libre para análisis estadístico\nPaquetes de R: vegan, BiodiversityR, iNEXT, betapart\nRepositorio GitHub con código y datos"
+  },
+  {
+    "objectID": "courses.html#consultas-y-colaboraciones",
+    "href": "courses.html#consultas-y-colaboraciones",
+    "title": "Cursos y Materiales Educativos",
+    "section": "🤝 Consultas y Colaboraciones",
+    "text": "🤝 Consultas y Colaboraciones\n\nContacto\nSi estás interesado en: - Colaboraciones académicas en proyectos de biodiversidad - Asesorías para análisis de datos ecológicos - Consultas sobre los materiales educativos - Desarrollo de tesis o proyectos de investigación\n📧 Email: cegranados@uniguajira.edu.co"
+  },
+  {
+    "objectID": "courses.html#formación-de-estudiantes",
+    "href": "courses.html#formación-de-estudiantes",
+    "title": "Cursos y Materiales Educativos",
+    "section": "🎓 Formación de Estudiantes",
+    "text": "🎓 Formación de Estudiantes\nComo docente e investigador, he supervisado numerosas tesis de pregrado y posgrado en temas relacionados con:\n\nEcología de ríos tropicales y ecosistemas lóticos\nMacroinvertebrados acuáticos como bioindicadores\nEvaluación de calidad del agua\nAnálisis de diversidad funcional y taxonómica\nImpactos del uso del suelo en ecosistemas acuáticos\nEfectos del cambio climático en biodiversidad acuática\n\n¿Interesado en desarrollar tu tesis? Revisa mi trayectoria en la sección Tesis dirigidas."
+  },
+  {
+    "objectID": "courses.html#estadísticas",
+    "href": "courses.html#estadísticas",
+    "title": "Cursos y Materiales Educativos",
+    "section": "📊 Estadísticas",
+    "text": "📊 Estadísticas\n\nTutoriales publicados en RPubs: 6+ documentos activos\nEstudiantes formados: Ver sección de Tesis\nAños de experiencia docente: 17+ años en educación superior\nÁrea de especialización: Ecología acuática, Limnología, Taxonomía de macroinvertebrados"
+  },
+  {
     "objectID": "index.html#cristian-granados-martínez",
     "href": "index.html#cristian-granados-martínez",
     "title": "Bienvenido a mi sitio web",

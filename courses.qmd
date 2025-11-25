@@ -1,0 +1,163 @@
+---
+title: "Cursos y Materiales Educativos"
+---
+
+## 📚 Recursos para el aprendizaje en Ecología Acuática
+
+En esta sección encontrarás materiales educativos, tutoriales y cursos relacionados con ecología acuática, análisis estadístico en R, y biodiversidad.
+
+------------------------------------------------------------------------
+
+## 📊 Tutoriales en R - RPubs
+
+### Colección Completa de Tutoriales
+
+Accede a mi colección de tutoriales prácticos desarrollados en R, diseñados para estudiantes e investigadores en ecología y ciencias ambientales.
+
+#### 📖 Tutoriales Publicados Recientemente:
+
+**Tutorial Principal:**
+- [**Análisis de Diversidad Alfa y Beta en el contexto del cambio climático**](https://rpubs.com/cegranados/1343750)
+  - Guía completa con 16 módulos
+  - Desde instalación de R hasta análisis avanzados
+  - Incluye ejercicios prácticos y recursos adicionales
+
+**Otros Tutoriales Disponibles:**
+- **Diversidad Beta Clase 1** - Fundamentos y métodos
+- **Protocolo preparación de reactivos PPF** - Limnología práctica
+- **Guía de Análisis de Diversidad** - Metodología tradicional
+- **Curvas de rango–abundancia de Whittaker** - Visualización de diversidad
+- **Gráficos especializados** - Análisis de diversidad alfa
+- **Análisis con Vegan** - Uso del paquete vegan para cálculos ecológicos
+
+#### 🎯 Contenido de los Tutoriales:
+
+Los tutoriales cubren:
+- Instalación y configuración de R y RStudio
+- Conceptos básicos de programación en R
+- Estructuras de datos y manipulación
+- Estadística descriptiva y visualización
+- Funciones especializadas para diversidad alfa y beta
+- Importación/exportación de datos ecológicos
+- Buenas prácticas en análisis reproducible
+
+**Nivel:** Básico a Avanzado  
+**Software:** R y RStudio (gratuito y libre)  
+**Idioma:** Español
+
+[**→ Explorar todos los tutoriales en RPubs**](https://rpubs.com/cegranados){.btn .btn-primary style="display: inline-block; padding: 0.75em 2em; background: #667eea; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; margin: 1em 0;"}
+
+------------------------------------------------------------------------
+
+## 🌍 Curso: Medición de la Diversidad Alfa y Beta
+
+### En el Contexto del Cambio Climático
+
+**Programa:** Maestría en Gestión Integral Frente al Cambio Climático  
+**Universidad de La Guajira**
+
+#### 📋 Información del Curso:
+
+- **Intensidad horaria:** 36 horas
+- **Fechas:** 12-13, 19-20, 26-27 de septiembre de 2025
+- **Fecha límite de inscripción:** 11 de septiembre de 2025
+- **Inicio:** 12 de septiembre de 2025
+- **Modalidad:** Presencial
+- **Ubicación:** Riohacha, La Guajira, Colombia
+- **Docente:** Cristian Enrique Granados Martínez (PhD(c))
+  - Biólogo, Magíster en Ciencias Biológicas
+  - Grupo de Investigación Biotecnología
+
+#### 📖 Descripción del Curso:
+
+El curso libre "Medición de la diversidad Alfa y Beta en el contexto del cambio climático" ofrece una aproximación teórico-práctica al análisis de la biodiversidad desde una perspectiva ecológica, cuantitativa y aplicada. 
+
+A través del estudio de indicadores como la **diversidad alfa** (intra-hábitat) y **beta** (entre hábitats), se explora cómo los cambios ambientales, particularmente los asociados al cambio climático, influyen en la composición y distribución de especies. 
+
+Este módulo brinda herramientas clave para la evaluación de impactos ambientales, el monitoreo ecológico y la toma de decisiones en materia de conservación y sostenibilidad.
+
+#### 🎯 ¿Qué aprenderás?
+
+- Fundamentos conceptuales de la diversidad alfa y beta
+- Métodos de cálculo e interpretación de índices de diversidad
+- Análisis de datos ecológicos con enfoque en variabilidad espacial
+- Aplicaciones prácticas en escenarios afectados por el cambio climático
+- Uso de software estadístico (R) para análisis de biodiversidad
+- Interpretación ecológica de resultados cuantitativos
+
+#### 🔬 Metodología:
+
+- Sesiones teóricas con ejemplos aplicados
+- Análisis de casos reales de ecosistemas afectados
+- Trabajo con bases de datos ecológicas
+- Ejercicios prácticos de cálculo de diversidad
+- Discusiones críticas sobre efectos del cambio climático en ecosistemas
+- Uso de R para análisis estadístico
+
+#### 👥 Dirigido a:
+
+- Estudiantes de posgrado en áreas ambientales
+- Investigadores en ecología y biodiversidad
+- Profesionales del área ambiental
+- Consultores ambientales
+- Toda persona interesada en el análisis de la biodiversidad y sus transformaciones frente al cambio climático
+
+[**→ Más información sobre el curso**](https://uniguajira.edu.co/curso-libre-medicion-de-la-diversidad-alfa-y-beta-en-el-contexto-del-cambio-climatico/){.btn .btn-success style="display: inline-block; padding: 0.75em 2em; background: #28a745; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; margin: 1em 0;"}
+
+------------------------------------------------------------------------
+
+## 📖 Recursos Complementarios
+
+### Materiales de Apoyo
+
+Los estudiantes del curso y usuarios de los tutoriales tienen acceso a:
+
+- **Scripts de R** para todos los análisis presentados
+- **Conjuntos de datos** de ejemplo de ecosistemas reales
+- **Documentación** de paquetes especializados
+- **Bibliografía recomendada** actualizada
+- **Protocolos** de muestreo de biodiversidad
+
+### Herramientas Recomendadas
+
+- **R y RStudio** - Software libre para análisis estadístico
+- **Paquetes de R:** vegan, BiodiversityR, iNEXT, betapart
+- **Repositorio GitHub** con código y datos
+
+------------------------------------------------------------------------
+
+## 🤝 Consultas y Colaboraciones
+
+### Contacto
+
+Si estás interesado en:
+- Colaboraciones académicas en proyectos de biodiversidad
+- Asesorías para análisis de datos ecológicos
+- Consultas sobre los materiales educativos
+- Desarrollo de tesis o proyectos de investigación
+
+📧 **Email:** [cegranados@uniguajira.edu.co](mailto:cegranados@uniguajira.edu.co)
+
+------------------------------------------------------------------------
+
+## 🎓 Formación de Estudiantes
+
+Como docente e investigador, he supervisado numerosas tesis de pregrado y posgrado en temas relacionados con:
+
+- Ecología de ríos tropicales y ecosistemas lóticos
+- Macroinvertebrados acuáticos como bioindicadores
+- Evaluación de calidad del agua
+- Análisis de diversidad funcional y taxonómica
+- Impactos del uso del suelo en ecosistemas acuáticos
+- Efectos del cambio climático en biodiversidad acuática
+
+**¿Interesado en desarrollar tu tesis?** Revisa mi trayectoria en la sección [**Tesis dirigidas**](Tesis.qmd).
+
+------------------------------------------------------------------------
+
+## 📊 Estadísticas
+
+- **Tutoriales publicados en RPubs:** 6+ documentos activos
+- **Estudiantes formados:** Ver sección de [Tesis](Tesis.qmd)
+- **Años de experiencia docente:** 17+ años en educación superior
+- **Área de especialización:** Ecología acuática, Limnología, Taxonomía de macroinvertebrados
