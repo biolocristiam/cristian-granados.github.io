@@ -14,6 +14,8 @@ website:
         file: Publicaciones.qmd
       - text: "Libros"
         file: Libros.qmd
+      - text: "Cursos"
+        file: courses.qmd
       - text: "Tesis"
         file: Tesis.qmd
       - text: "Curriculum Vitae (CV)"
