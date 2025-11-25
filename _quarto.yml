@@ -18,6 +18,8 @@ website:
         file: courses.qmd
       - text: "Tesis"
         file: Tesis.qmd
+      - text: "Prensa"
+        file: Prensa.qmd
       - text: "Curriculum Vitae (CV)"
         file: Curriculum_Vitae_(CV).qmd
     right:
@@ -41,3 +43,4 @@ format:
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
           
 include-after-body: contador.html
+
