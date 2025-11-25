@@ -8,6 +8,14 @@
     ]
   },
   {
+    "listing": "/index_backup.html",
+    "items": [
+      "/posts/video-instagram-campo/index.html",
+      "/posts/video-macroinvertebrados/index.html",
+      "/posts/video-tecnicas-campo/index.html"
+    ]
+  },
+  {
     "listing": "/index.html",
     "items": [
       "/posts/video-instagram-campo/index.html",

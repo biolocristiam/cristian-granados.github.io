@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Libros y Capítulos – Cristian Granados-Martínez</title>
+<title>index_backup – Cristian Granados-Martínez</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -67,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-6BF2W1LY77"></script>
 
 <script type="text/javascript">
@@ -78,11 +109,40 @@ gtag('config', 'G-6BF2W1LY77', { 'anonymize_ip': true});
 </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="floating nav-fixed quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -108,7 +168,7 @@ gtag('config', 'G-6BF2W1LY77', { 'anonymize_ip': true});
 <span class="menu-text">Publicaciones</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./Libros.html" aria-current="page"> 
+    <a class="nav-link" href="./Libros.html"> 
 <span class="menu-text">Libros</span></a>
   </li>  
   <li class="nav-item">
@@ -143,330 +203,180 @@ gtag('config', 'G-6BF2W1LY77', { 'anonymize_ip': true});
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Contenido</h2>
-   
-  <ul>
-  <li><a href="#libros-publicados" id="toc-libros-publicados" class="nav-link active" data-scroll-target="#libros-publicados">Libros Publicados</a>
-  <ul class="collapse">
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section">2023</a></li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2022</a></li>
-  </ul></li>
-  <li><a href="#libros-de-acceso-abierto" id="toc-libros-de-acceso-abierto" class="nav-link" data-scroll-target="#libros-de-acceso-abierto">Libros de Acceso Abierto</a></li>
-  <li><a href="#memorias-y-compilaciones" id="toc-memorias-y-compilaciones" class="nav-link" data-scroll-target="#memorias-y-compilaciones">Memorias y Compilaciones</a></li>
-  <li><a href="#capítulos-de-libros" id="toc-capítulos-de-libros" class="nav-link" data-scroll-target="#capítulos-de-libros">Capítulos de Libros</a>
-  <ul class="collapse">
-  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">2020</a></li>
-  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3">2018</a></li>
-  <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4">2017</a></li>
-  <li><a href="#section-5" id="toc-section-5" class="nav-link" data-scroll-target="#section-5">2015</a></li>
-  <li><a href="#section-6" id="toc-section-6" class="nav-link" data-scroll-target="#section-6">2011</a></li>
-  </ul></li>
-  <li><a href="#estadísticas" id="toc-estadísticas" class="nav-link" data-scroll-target="#estadísticas">Estadísticas</a></li>
-  </ul>
-</nav>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Libros y Capítulos</h1>
-</div>
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="libros-publicados" class="level2">
-<h2 class="anchored" data-anchor-id="libros-publicados">Libros Publicados</h2>
-<section id="section" class="level3">
-<h3 class="anchored" data-anchor-id="section">2023</h3>
-<div class="book-item">
-<div class="book-cover">
-<p><img src="imagenes/libro_2023_jerez.jpg" class="img-fluid" width="200"></p>
-</div>
-<section id="descomposición-de-la-hojarasca-y-su-relación-con-los-macroinvertebrados-en-el-río-jerez-la-guajira" class="level4 book-info">
-<h4 class="anchored" data-anchor-id="descomposición-de-la-hojarasca-y-su-relación-con-los-macroinvertebrados-en-el-río-jerez-la-guajira">Descomposición de la hojarasca y su relación con los macroinvertebrados en el río Jerez, La Guajira</h4>
-<p><strong>Autores:</strong> Cristian Granados-Martínez, Leanis Pitre Ruiz, Sorangel Andrea Solano Perez</p>
-<p><strong>Descripción:</strong> Este libro analiza los procesos de descomposición de hojarasca en ecosistemas acuáticos y su importante relación con las comunidades de macroinvertebrados en el río Jerez, La Guajira. Incluye índice de tablas y figuras, además de fotografías a color que documentan el trabajo de campo y los hallazgos de la investigación.</p>
-<p><strong>Editorial:</strong> Universidad de La Guajira<br>
-<strong>ISBN:</strong> 978-628-7718-10-4<br>
-<strong>Año:</strong> 2023</p>
-<p><a href="https://repositoryinst.uniguajira.edu.co/handle/uniguajira/1507">🔗 Repositorio</a> | <a href="pdf/libro_2023_jerez.pdf">📄 PDF</a></p>
+<section id="bienvenido-a-mi-sitio-web" class="level1 hero-banner" style="background-image: url('images/banner.jpg'); background-size: cover; background-position: center;">
+<h1>Bienvenido a mi sitio web</h1>
 </section>
+<div class="main-content">
+<div class="sidebar-profile">
+<p><img src="images/profile.jpg" class="profile-photo img-fluid"></p>
+<section id="cristian-granados-martínez" class="level2 profile-name">
+<h2 class="profile-name anchored" data-anchor-id="cristian-granados-martínez">Cristian Granados-Martínez</h2>
+<div class="profile-subtitle">
+<p>Limnología - Taxonomía - Ecología de Ríos</p>
+</div>
+<div class="profile-links">
+<p><a href="https://github.com/biolocristiam/cristian-granados.github.-io">🔗 GitHub</a></p>
+<p><a href="https://orcid.org/0000-0003-0161-9537">📊 ORCID</a></p>
+<p><a href="https://scholar.google.com/citations?user=s1SdUpoAAAAJ&amp;hl=es">📚 Google Scholar</a></p>
+<p><a href="https://www.researchgate.net/profile/Cristian-Granados-Martinez?ev=hdr_xprf">🔬 ResearchGate</a></p>
+<p><a href="cegranados@uniguajira.edu.co">✉️ Email</a></p>
+</div>
+</section>
+</div>
+<div class="main-text">
+<section id="formación-académica" class="level3">
+<h3 class="anchored" data-anchor-id="formación-académica">Formación Académica</h3>
+<p><strong>Pregrado:</strong> Biólogo con énfasis en recursos hídricos - Universidad del Magdalena</p>
+<p><strong>Maestría:</strong> Ciencias Biológicas con mención en Ecología Acuática - Universidad del Zulia, Venezuela</p>
+<p><strong>Doctorado:</strong> Ciencias Naturales para el Desarrollo (DOCINADE) - El Tecnológico de Costa Rica</p>
+<p><strong>Afiliación:</strong> Docente de planta Universidad de La Guajira, Grupo de investigación Biotecnología</p>
+<hr>
+</section>
+<section id="especialización-y-experiencia-internacional" class="level3">
+<h3 class="anchored" data-anchor-id="especialización-y-experiencia-internacional">Especialización y Experiencia Internacional</h3>
+<p>Pasantía de Investigación: Instituto de Biodiversidad Neotropical - Universidad de Tucumán, Argentina (2017)</p>
+<hr>
+</section>
+<section id="colaboraciones" class="level3">
+<h3 class="anchored" data-anchor-id="colaboraciones">Colaboraciones</h3>
+<p>Laboratorio de Entomología (LEUNA). Universidad Nacional de Costa Rica</p>
+<hr>
+</section>
+<section id="sobre-mi-trabajo" class="level3">
+<h3 class="anchored" data-anchor-id="sobre-mi-trabajo">Sobre mi trabajo</h3>
+<p>En este sitio, puedes conocer más sobre mí, mis intereses de investigación y revisar diferentes materiales educativos sobre ecología de ríos, taxonomía y ciencias ambientales.</p>
+<p>A continuación puedes ver algunas imágenes de los lugares donde he desarrollado mi trabajo de campo e investigación.</p>
+</section>
+<section id="áreas-de-trabajo" class="level2">
+<h2 class="anchored" data-anchor-id="áreas-de-trabajo">🌍 Áreas de Trabajo</h2>
+<div class="work-images">
+<div class="image-container">
+<p><img src="images/trabajo1.jpg" class="field-image img-fluid"></p>
+<p><em>Muestreos para recolectar macroinvertebradoscon redes tipo D</em></p>
+</div>
+<div class="image-container">
+<p><img src="images/trabajo2.jpg" class="field-image img-fluid"></p>
+<p><em>Muestreos para recolectar macroinvertebradoscon utilizando una draga</em></p>
+</div>
 </div>
 <hr>
 </section>
-<section id="section-1" class="level3">
-<h3 class="anchored" data-anchor-id="section-1">2022</h3>
-<div class="book-item">
-<div class="book-cover">
-<p><img src="imagenes/libro_2022_manglares.jpg" class="img-fluid" width="200"></p>
-</div>
-<section id="descomposición-de-la-hojarasca-foliar-en-manglares-del-delta-del-río-ranchería-la-guajira" class="level4 book-info">
-<h4 class="anchored" data-anchor-id="descomposición-de-la-hojarasca-foliar-en-manglares-del-delta-del-río-ranchería-la-guajira">Descomposición de la hojarasca foliar en manglares del delta del Río Ranchería, La Guajira</h4>
-<p><strong>Autores:</strong> Cristian Granados Martínez, Julio Acuña Vargas, Jeiner Castellanos Barliza</p>
-<p><strong>Descripción:</strong> Investigación sobre los procesos ecológicos de descomposición de hojarasca en ecosistemas de manglar del delta del río Ranchería. El estudio documenta la dinámica de nutrientes y el papel de estos ecosistemas costeros en el Caribe colombiano.</p>
-<p><strong>Editorial:</strong> Universidad de La Guajira<br>
-<strong>ISBN:</strong> 978-628-7581-80-7<br>
-<strong>Año:</strong> 2022</p>
-<p><a href="pdf/libro_2022_manglares.pdf">📄 PDF</a></p>
+<section id="cursos-de-maestría" class="level2">
+<h2 class="anchored" data-anchor-id="cursos-de-maestría">## Cursos de Maestría</h2>
 </section>
+</div>
 </div>
 <hr>
-</section>
-</section>
-<section id="libros-de-acceso-abierto" class="level2">
-<h2 class="anchored" data-anchor-id="libros-de-acceso-abierto">Libros de Acceso Abierto</h2>
-<div class="book-item">
-<div class="book-cover">
-<p><img src="imagenes/libro_microalgales.jpg" class="img-fluid" width="200"></p>
+<div style="text-align: center; margin-top: 3em; padding: 2em; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+<div style="color: white; margin-bottom: 1em;">
+<h3 style="margin: 0; font-weight: 300; font-size: 1.1em;" class="anchored">
+Visitas al sitio
+</h3>
 </div>
-<section id="comunidades-microalgales-en-sistemas-de-tratamiento-de-aguas-residuales" class="level4 book-info">
-<h4 class="anchored" data-anchor-id="comunidades-microalgales-en-sistemas-de-tratamiento-de-aguas-residuales">Comunidades microalgales en sistemas de tratamiento de aguas residuales</h4>
-<p><strong>Descripción:</strong> Este libro de acceso abierto explora el rol de las comunidades microalgales en sistemas de tratamiento de aguas residuales. Incluye índice de tablas y figuras, además de fotografías a color que ilustran las diferentes especies y procesos estudiados.</p>
-<p><strong>Editorial:</strong> Universidad de La Guajira<br>
-<strong>ISBN:</strong> 978-628-7718-06-7<br>
-<strong>Tipo:</strong> Acceso Abierto</p>
-<p><a href="https://repositoryinst.uniguajira.edu.co/handle/uniguajira/1561">🔗 Repositorio</a> | <a href="pdf/libro_microalgales.pdf">📄 PDF</a></p>
-</section>
+<div style="background: rgba(255,255,255,0.2); padding: 1em; border-radius: 10px; display: inline-block;">
+<p><img src="https://visitor-badge.laobi.icu/badge?page_id=biolocristiam.cristian-granados&amp;left_color=667eea&amp;right_color=764ba2&amp;left_text=Visitantes" alt="Contador de visitas" style="display: inline-block;"></p>
 </div>
-<hr>
-</section>
-<section id="memorias-y-compilaciones" class="level2">
-<h2 class="anchored" data-anchor-id="memorias-y-compilaciones">Memorias y Compilaciones</h2>
-<div class="book-item">
-<div class="book-cover">
-<p><img src="imagenes/libro_semilleros.jpg" class="img-fluid" width="200"></p>
+<div style="margin-top: 1em; color: rgba(255,255,255,0.8); font-size: 0.9em;">
+<p>Gracias por visitar mi sitio web 🌟</p>
 </div>
-<section id="i-encuentro-de-experiencias-significativas-de-los-semilleros-de-investigación-en-la-universidad-de-la-guajira-ciencias-básicas-y-aplicadas" class="level4 book-info">
-<h4 class="anchored" data-anchor-id="i-encuentro-de-experiencias-significativas-de-los-semilleros-de-investigación-en-la-universidad-de-la-guajira-ciencias-básicas-y-aplicadas">I Encuentro de experiencias significativas de los Semilleros de Investigación en la Universidad de La Guajira: Ciencias Básicas y Aplicadas</h4>
-<p><strong>Autores:</strong> Cristian Darío Montoya Misas, Marlis Carolina Holguín Córdoba, Cristian Enrique Granados Martínez, Nelson Valero, Michel Caballero Castaño</p>
-<p><strong>Descripción:</strong> Compilación de experiencias significativas de los semilleros de investigación en el área de ciencias básicas y aplicadas. Este libro documenta el trabajo investigativo de estudiantes y docentes en formación.</p>
-<p><strong>Editorial:</strong> Universidad de La Guajira<br>
-<strong>ISBN:</strong> 978-958-5178-91-5</p>
-<p><a href="https://repositoryinst.uniguajira.edu.co/handle/uniguajira/1644">🔗 Repositorio</a> | <a href="pdf/libro_semilleros.pdf">📄 PDF</a></p>
-</section>
 </div>
-<hr>
-</section>
-<section id="capítulos-de-libros" class="level2">
-<h2 class="anchored" data-anchor-id="capítulos-de-libros">Capítulos de Libros</h2>
-<section id="section-2" class="level3">
-<h3 class="anchored" data-anchor-id="section-2">2020</h3>
-<div class="chapter-item">
-<p><strong>Macroinvertebrados acuáticos de la reserva natural Bojonawi (Escudo Guayanés), río Orinoco y planicie inundable, Vichada, Colombia</strong><br>
-En: <em>VIII. Biodiversidad de la reserva natural Bojonawi, Vichada, Colombia: río Orinoco y planicie de inundación</em><br>
-Instituto de Investigación de Recursos Biológicos Alexander von Humboldt<br>
-ISBN: 978-958-5183-01-8, pp.&nbsp;129-146</p>
-</div>
-</section>
-<section id="section-3" class="level3">
-<h3 class="anchored" data-anchor-id="section-3">2018</h3>
-<div class="chapter-item">
-<p><strong>Macroinvertebrados acuáticos de los ríos Guayabero medio, bajo Losada y bajo Duda, sierra de La Macarena, Meta, Colombia</strong><br>
-En: <em>V. Biodiversidad de la sierra de La Macarena, Meta, Colombia. Parte I. Ríos Guayabero medio, bajo Losada y bajo Duda</em><br>
-Serie Editorial Fauna Silvestre Neotropical<br>
-ISBN: 978-958-5418-53-0, pp.&nbsp;97-120</p>
-</div>
-<div class="chapter-item">
-<p><strong>Limnología de los ríos Guayabero medio, bajo Losada y bajo Duda, sierra de La Macarena, Meta, Colombia</strong><br>
-En: <em>V. Biodiversidad de la sierra de La Macarena, Meta, Colombia. Parte I. Ríos Guayabero medio, bajo Losada y bajo Duda</em><br>
-Serie Editorial Fauna Silvestre Neotropical<br>
-ISBN: 978-958-5418-53-0, pp.&nbsp;63-80</p>
-</div>
-</section>
-<section id="section-4" class="level3">
-<h3 class="anchored" data-anchor-id="section-4">2017</h3>
-<div class="chapter-item">
-<p><strong>Macroinvertebrados acuáticos de Caño Cristales</strong><br>
-En: <em>Fauna de Caño Cristales, sierra La Macarena, Meta, Colombia</em><br>
-Serie Editorial Fauna Silvestre Neotropical<br>
-Instituto de Investigación de Recursos Biológicos Alexander von Humboldt<br>
-ISBN: 978-958-5418-11-0, pp.&nbsp;47-65</p>
-</div>
-<div class="chapter-item">
-<p><strong>Área de estudio</strong><br>
-En: <em>Fauna de Caño Cristales, sierra La Macarena, Meta, Colombia</em><br>
-Serie Editorial Fauna Silvestre Neotropical<br>
-Instituto de Investigación de Recursos Biológicos Alexander von Humboldt<br>
-ISBN: 978-958-5418-11-0, pp.&nbsp;31-44</p>
-</div>
-<div class="chapter-item">
-<p><strong>Macroinvertebrados acuáticos del río Bita</strong><br>
-En: <em>Biodiversidad del río Bita, Vichada, Colombia</em><br>
-Serie Editorial Fauna Silvestre Neotropical<br>
-Instituto de Investigación de Recursos Biológicos Alexander von Humboldt<br>
-ISBN: 978-958-5418-21-9, pp.&nbsp;122-141</p>
-</div>
-</section>
-<section id="section-5" class="level3">
-<h3 class="anchored" data-anchor-id="section-5">2015</h3>
-<div class="chapter-item">
-<p><strong>Análisis de las preferencias alimenticias y estructuras tróficas de los macroinvertebrados acuáticos en un río de montaña colombiano</strong><br>
-En: <em>Tendencias de Investigación en Limnología Tropical: Perspectivas Universitarias en Latinoamérica</em><br>
-UNAM - Universidad Nacional Autónoma de México<br>
-ISBN: 978-607-02-7199-1, pp.&nbsp;339-348</p>
-</div>
-<div class="chapter-item">
-<p><strong>Biota acuática de la serranía de La Macuira, Parque Nacional Natural Macuira, Guajira colombiana</strong><br>
-En: <em>XII. Cuencas Pericontinentales de Colombia, Ecuador, Perú y Venezuela: Tipología, Biodiversidad, Servicios Ecosistémicos y Sostenibilidad de los Ríos, Quebradas y Arroyos Costeros</em><br>
-Instituto Alexander Von Humboldt &amp; Instituto de Ciencias Naturales de la Universidad Nacional<br>
-ISBN: 978-958-8889-25-2 / 978-958-8889-26-9, pp.&nbsp;293-315</p>
-</div>
-<div class="chapter-item">
-<p><strong>Relaciones longitud-peso y estimación de la masa seca de insectos acuáticos de los órdenes Ephemeroptera, Plecoptera, Trichoptera, asociados a la cuenca baja del río Jerez del departamento de La Guajira, Colombia</strong><br>
-En: <em>Realidades y Perspectivas Educativas, Tecnológicas y Científicas en el Siglo XXI</em><br>
-Universidad de La Guajira<br>
-ISBN: 978-958-8530-90-1, pp.&nbsp;161-162</p>
-</div>
-<div class="chapter-item">
-<p><strong>Descomposición de dos especies de mangle en tres diferentes sustratos en el delta del río Ranchería (brazo Riíto), Riohacha, Colombia</strong><br>
-En: <em>Realidades y Perspectivas Educativas, Tecnológicas y Científicas en el Siglo XXI</em><br>
-Universidad de La Guajira<br>
-ISBN: 978-958-8530-90-1, pp.&nbsp;166-167</p>
-</div>
-<div class="chapter-item">
-<p><strong>Caracterización de la herpetofauna asociada a la estacionalidad climática, laguna Buenavista, Manaure, La Guajira</strong><br>
-En: <em>Realidades y Perspectivas Educativas, Tecnológicas y Científicas en el Siglo XXI</em><br>
-Universidad de La Guajira<br>
-ISBN: 978-958-8530-90-1, pp.&nbsp;177-178</p>
-</div>
-<div class="chapter-item">
-<p><strong>Deriva de macroinvertebrados acuáticos en la cuenca baja del río Jerez, municipio de Dibulla, Colombia</strong><br>
-En: <em>Vinculación Universidad Sector Empresarial: Factor Clave para el Desarrollo Regional</em><br>
-Universidad de La Guajira<br>
-ISBN: 978-958-8530-91-8, pp.&nbsp;333-337</p>
-</div>
-<div class="chapter-item">
-<p><strong>Dieta de Leptodactylus insularum (Leptodactylidae: Anura) presente en sistemas productivos asociados a bosque seco tropical, Dibulla, La Guajira</strong><br>
-En: <em>X Convención Internacional Sobre Medio Ambiente y Desarrollo, Memorias</em><br>
-Ministerio de Ciencia, Tecnología y Medio Ambiente - Cuba<br>
-ISBN: 978-959-300-073-4, pp.&nbsp;208-209</p>
-</div>
-<div class="chapter-item">
-<p><strong>Descomposición de dos especies de mangle en tres diferentes sustratos en el delta del río Ranchería (brazo Riíto), Riohacha, Colombia</strong><br>
-En: <em>X Convención Internacional Sobre Medio Ambiente y Desarrollo, Memorias</em><br>
-Ministerio de Ciencia, Tecnología y Medio Ambiente - Cuba<br>
-ISBN: 978-959-300-073-4, pp.&nbsp;254-255</p>
-</div>
-<div class="chapter-item">
-<p><strong>Herpetofauna asociada a la estacionalidad climática, laguna Buenavista, Manaure, La Guajira</strong><br>
-En: <em>X Convención Internacional Sobre Medio Ambiente y Desarrollo, Memorias</em><br>
-Ministerio de Ciencia, Tecnología y Medio Ambiente - Cuba<br>
-ISBN: 978-959-300-073-4, pp.&nbsp;111</p>
-</div>
-</section>
-<section id="section-6" class="level3">
-<h3 class="anchored" data-anchor-id="section-6">2011</h3>
-<div class="chapter-item">
-<p><strong>Producción primaria fitoplanctónica y metabolismo durante una época lluviosa en una laguna costera estuarina</strong><br>
-En: <em>Memorias del I Encuentro Regional de Investigadores en Ciencias de la Vida. Sinergia Caribe</em><br>
-Universidad del Magdalena<br>
-ISBN: 978-958-746-040-7, pp.&nbsp;91</p>
-</div>
-<hr>
-</section>
-</section>
-<section id="estadísticas" class="level2">
-<h2 class="anchored" data-anchor-id="estadísticas">Estadísticas</h2>
-<ul>
-<li><strong>Total de libros:</strong> 4</li>
-<li><strong>Libros de autor principal:</strong> 2</li>
-<li><strong>Libros de acceso abierto:</strong> 1</li>
-<li><strong>Memorias y compilaciones:</strong> 1</li>
-<li><strong>Capítulos de libros:</strong> 17</li>
-<li><strong>Años de publicación:</strong> 2011-2020</li>
-</ul>
-<style>
-.book-item {
-  display: flex;
-  gap: 2em;
-  margin-bottom: 3em;
-  padding: 1.5em;
-  background-color: #f8f9fa;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.book-cover {
-  flex-shrink: 0;
-}
-
-.book-cover img {
-  border-radius: 4px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  object-fit: cover;
-  max-height: 280px;
-}
-
-.book-info {
-  flex-grow: 1;
-}
-
-.book-info h4 {
-  color: #2c3e50;
-  margin-top: 0;
-  margin-bottom: 0.8em;
-  font-size: 1.3em;
-}
-
-.book-info strong {
-  color: #34495e;
-}
-
-.book-info a {
-  margin-right: 1em;
-}
-
-.chapter-item {
-  margin-bottom: 1.5em;
-  padding: 1em;
-  padding-left: 1.2em;
-  border-left: 3px solid #e67e22;
-  background-color: #fdfefe;
-}
-
-.chapter-item strong {
-  color: #2c3e50;
-  display: block;
-  margin-bottom: 0.4em;
-}
-
-@media (max-width: 768px) {
-  .book-item {
-    flex-direction: column;
-  }
-  
-  .book-cover img {
-    width: 100%;
-    max-height: none;
-  }
-}
-</style>
 
 
-</section>
 
-</main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="dmlkZW9zJTJDdHJhYmFqbyUyMGRlJTIwY2FtcG8=" data-listing-date-sort="1763960400000" data-listing-file-modified-sort="1764028556146" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="17">
+<div class="thumbnail"><a href="./posts/video-instagram-campo/index.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/video-instagram-campo/index.html" class="no-external">Trabajo de campo en ecosistemas acuáticos</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/video-instagram-campo/index.html" class="no-external">
+🎬 Ver reel en Instagram →
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/video-instagram-campo/index.html" class="no-external">
+<div class="listing-date">
+Nov 24, 2025
+</div>
+<div class="listing-author">
+Cristian Granados
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="dmlkZW9zJTJDZWNvbG9nJUMzJUFEYSUyMGFjdSVDMyVBMXRpY2E=" data-listing-date-sort="1763960400000" data-listing-file-modified-sort="1764028555744" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
+<div class="thumbnail"><a href="./posts/video-macroinvertebrados/index.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/video-macroinvertebrados/index.html" class="no-external">Macroinvertebrados en el río Jerez</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/video-macroinvertebrados/index.html" class="no-external">
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/k9yleYEvyYM" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/video-macroinvertebrados/index.html" class="no-external">
+<div class="listing-date">
+Nov 24, 2025
+</div>
+<div class="listing-author">
+Cristian Granados
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="dmlkZW9zJTJDbWV0b2RvcyUyMGRlJTIwY2FtcG8=" data-listing-date-sort="1763960400000" data-listing-file-modified-sort="1764028701768" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="15">
+<div class="thumbnail"><a href="./posts/video-tecnicas-campo/index.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/video-tecnicas-campo/index.html" class="no-external">Tecnicas de campo en ecologia acuatica</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/video-tecnicas-campo/index.html" class="no-external">
+Metodologias y tecnicas para el estudio de ecosistemas acuaticos en rios tropicales.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/video-tecnicas-campo/index.html" class="no-external">
+<div class="listing-date">
+Nov 24, 2025
+</div>
+<div class="listing-author">
+Cristian Granados
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <div style="text-align: center; margin-top: 3em; padding: 2em; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
 
   <div style="color: white; margin-bottom: 1em;">
